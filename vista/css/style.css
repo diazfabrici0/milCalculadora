@@ -1,0 +1,226 @@
+.botones input{
+    background-color: rgb(50, 50, 50);
+    border-radius: 5px;
+    color: aliceblue;
+    border: none;
+    margin: 1px;
+    margin-bottom: 4px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);
+    
+    
+}
+
+.num1{
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.num1:hover{
+    background-color:  rgb(18, 18, 18); /* Color de fondo cuando el mouse está sobre el botón */
+    color: #ffffff; /* Color del texto cuando el mouse está sobre el botón */
+}
+
+.num2{
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.num2:hover{
+    background-color:  rgb(18, 18, 18); /* Color de fondo cuando el mouse está sobre el botón */
+    color: #ffffff; /* Color del texto cuando el mouse está sobre el botón */
+}
+
+.num3{
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.num3:hover{
+    background-color:  rgb(18, 18, 18); /* Color de fondo cuando el mouse está sobre el botón */
+    color: #ffffff; /* Color del texto cuando el mouse está sobre el botón */
+}
+.num4{
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.num4:hover{
+    background-color:  rgb(18, 18, 18); /* Color de fondo cuando el mouse está sobre el botón */
+    color: #ffffff; /* Color del texto cuando el mouse está sobre el botón */
+}
+
+.num5{
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.num5:hover{
+    background-color:  rgb(18, 18, 18); /* Color de fondo cuando el mouse está sobre el botón */
+    color: #ffffff; /* Color del texto cuando el mouse está sobre el botón */
+}
+
+.num6{
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.num6:hover{
+    background-color:  rgb(18, 18, 18); /* Color de fondo cuando el mouse está sobre el botón */
+    color: #ffffff; /* Color del texto cuando el mouse está sobre el botón */
+}
+
+.num7{
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.num7:hover{
+    background-color:  rgb(18, 18, 18); /* Color de fondo cuando el mouse está sobre el botón */
+    color: #ffffff; /* Color del texto cuando el mouse está sobre el botón */
+}
+
+.num8{
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.num8:hover{
+    background-color:  rgb(18, 18, 18); /* Color de fondo cuando el mouse está sobre el botón */
+    color: #ffffff; /* Color del texto cuando el mouse está sobre el botón */
+}
+
+.num9{
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.num9:hover{
+    background-color:  rgb(18, 18, 18); /* Color de fondo cuando el mouse está sobre el botón */
+    color: #ffffff; /* Color del texto cuando el mouse está sobre el botón */
+}
+.num0{
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.num0:hover{
+    background-color:  rgb(18, 18, 18); /* Color de fondo cuando el mouse está sobre el botón */
+    color: #ffffff; /* Color del texto cuando el mouse está sobre el botón */
+}
+
+.numX{
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.numX:hover{
+    background-color:  rgb(18, 18, 18); /* Color de fondo cuando el mouse está sobre el botón */
+    color: #ffffff; /* Color del texto cuando el mouse está sobre el botón */
+}
+
+.num-{
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.num-:hover{
+    background-color:  rgb(18, 18, 18); /* Color de fondo cuando el mouse está sobre el botón */
+    color: #ffffff; /* Color del texto cuando el mouse está sobre el botón */
+}
+
+.numMas{
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.numMas:hover{
+    background-color:  rgb(18, 18, 18); /* Color de fondo cuando el mouse está sobre el botón */
+    color: #ffffff; /* Color del texto cuando el mouse está sobre el botón */
+}
+
+.numReset{
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.numReset:hover{
+    background-color:  rgb(18, 18, 18); /* Color de fondo cuando el mouse está sobre el botón */
+    color: #ffffff; /* Color del texto cuando el mouse está sobre el botón */
+}
+
+.numDiv{
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.numDiv:hover{
+    background-color:  rgb(18, 18, 18); /* Color de fondo cuando el mouse está sobre el botón */
+    color: #ffffff; /* Color del texto cuando el mouse está sobre el botón */
+}
+
+.numResul{
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.numResul:hover{
+    background-color:  rgb(18, 18, 18); /* Color de fondo cuando el mouse está sobre el botón */
+    color: #ffffff; /* Color del texto cuando el mouse está sobre el botón */
+}
+
+.titulo{
+    font-size: 25px;
+    color: #3893f4;
+    font-weight:600;
+}
+
+.navbar-text{
+    font-size: 23px;
+}
+
+#pantalla{
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    width: 220px;
+    height: 50px;
+    border: none;
+    margin-bottom: 10px;
+    background-color:   rgb(50, 50, 50);
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+#calc{
+    border-radius: 10px;
+    background-color:rgb(32, 95, 205);
+    width: 262px;
+    height: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);
+}
+
+#calc form{
+    margin-top: 20px;
+    margin: 20px;
+}
+
+:root {
+    --bs-gradient: linear-gradient(180deg, #16369f, #5f5482); /* Gradient oscuro */
+}
+
+.elemento{
+    /* Utiliza la variable --bs-gradient para el fondo de gradiente */
+    background-image: var(--bs-gradient);
+    /* Otros estilos de tu elemento */
+    width: 100%;
+    height: 92.7vh;
+    /* Puedes agregar más propiedades de estilo según tus necesidades */
+}
+
+
