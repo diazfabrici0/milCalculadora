@@ -1,4 +1,11 @@
+body{
+    font-family: 'Cabin', sans-serif;
+}
+
+
+
 .botones input{
+    font-weight: 800;
     background-color: rgb(206, 206, 206);
     border-radius: 3px;
     color: #0e1734;
@@ -22,15 +29,45 @@
     border-radius: 3px;
 }
 
+#del {
+    font-size: 15px;
+}
+
 #reset {
     width: 106px;
     margin-left: 12px;
+    font-size: 15px;
 }
 
 #equal {
+    font-size: 15px;
     width: 106px;
     background-color: #3893f4;
+
 }
+
+.numDot {
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer; 
+}
+
+.numDot:hover {
+    background-color:  rgb(18, 18, 18); /* Color de fondo cuando el mouse está sobre el botón */
+    color: #ffffff;
+}
+
+.numDel{
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.numDel:hover {
+    background-color:  rgb(240, 80, 80); /* Color de fondo cuando el mouse está sobre el botón */
+    color: #ffffff;
+}
+
+
 
 .num1{
     transition: background-color 0.3s, color 0.3s;

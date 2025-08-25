@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>miCalculadora</title>
 </head>
 <body>
@@ -25,7 +28,7 @@
             <input type="button" value="7" onclick="document.miCalculadora.resp.value+='7'" class="num7">
             <input type="button" value="8" onclick="document.miCalculadora.resp.value+='8'" class="num8">
             <input type="button" value="9" onclick="document.miCalculadora.resp.value+='9'" class="num9">
-            <input type="button" value="DEL" class="numDel" onclick="deleteNum()">
+            <input type="button" value="DEL" class="numDel" id="del" onclick="deleteNum()">
             <br>
             <input type="button" value="4" onclick="document.miCalculadora.resp.value+='4'" class="num4">
             <input type="button" value="5" onclick="document.miCalculadora.resp.value+='5'" class="num5">
