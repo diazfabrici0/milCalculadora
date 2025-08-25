@@ -9,43 +9,62 @@
     <title>miCalculadora</title>
 </head>
 <body>
-    <nav class="navbar bg-light shadow p-2 mb-0 bg-body-tertiary rounded">
-        <div class="container-fluid">
-          <span class="navbar-text">
-            mi<span class="titulo">Calculadora</span>
-          </span>
-        </div>
-      </nav>
-      <div class="elemento">
-        <div id="calc">
-            <form name="miCalculadora">
-                <input id="pantalla" type="textfield" name="resp" value="" autocomplete="off" readonly >
-                <br>
-                <div class="botones">
-                    <input type="button" value="7" onclick="document.miCalculadora.resp.value+='7'" class="num7">
-                    <input type="button" value="8" onclick="document.miCalculadora.resp.value+='8'" class="num8">
-                    <input type="button" value="9" onclick="document.miCalculadora.resp.value+='9'" class="num9">
-                    <input type="button" value="+" onclick="document.miCalculadora.resp.value+='+'" class="numMas">
-                    <br>
-                    <input type="button" value="4" onclick="document.miCalculadora.resp.value+='4'" class="num4">
-                    <input type="button" value="5" onclick="document.miCalculadora.resp.value+='5'" class="num5">
-                    <input type="button" value="6" onclick="document.miCalculadora.resp.value+='6'" class="num6">
-                    <input type="button" value="-" onclick="document.miCalculadora.resp.value+='-'" class="num-">
-                    <br>
-                    <input type="button" value="1" onclick="document.miCalculadora.resp.value+='1'" class="num1">
-                    <input type="button" value="2" onclick="document.miCalculadora.resp.value+='2'" class="num2">
-                    <input type="button" value="3" onclick="document.miCalculadora.resp.value+='3'" class="num3">
-                    <input type="button" value="X" onclick="document.miCalculadora.resp.value+='*'" class="numX">
-                    <br>
-                    <input type="button" value="0" onclick="document.miCalculadora.resp.value+='0'"class="num0">
-                    <input type="reset" value="C" class="numReset">
-                    <input type="button" value="=" class="numResul" onclick="document.miCalculadora.resp.value=eval(document.miCalculadora.resp.value)">
-                    <input type="button" value="/" onclick="document.miCalculadora.resp.value+='/'" class="numDiv">
-                </div>
-            </form>
-        </div>
-
+  <nav class="navbar bg-light shadow mb-0 bg-body-tertiary rounded">
+    <div class="container-fluid">
+      <span class="navbar-text">
+        <span>mi</span><span class="titulo">Calculadora</span>
+      </span>
+    </div>
+  </nav>
+    <div class="elemento">
+      <div id="calc">
+        <form name="miCalculadora">
+          <input id="pantalla" type="textfield" name="resp" value="" autocomplete="off" readonly >
+          <br>
+          <div class="botones">
+            <input type="button" value="7" onclick="document.miCalculadora.resp.value+='7'" class="num7">
+            <input type="button" value="8" onclick="document.miCalculadora.resp.value+='8'" class="num8">
+            <input type="button" value="9" onclick="document.miCalculadora.resp.value+='9'" class="num9">
+            <input type="button" value="DEL" class="numDel" onclick="deleteNum()">
+            <br>
+            <input type="button" value="4" onclick="document.miCalculadora.resp.value+='4'" class="num4">
+            <input type="button" value="5" onclick="document.miCalculadora.resp.value+='5'" class="num5">
+            <input type="button" value="6" onclick="document.miCalculadora.resp.value+='6'" class="num6">
+            <input type="button" value="-" onclick="document.miCalculadora.resp.value+='-'" class="num-">
+            <br>
+            <input type="button" value="1" onclick="document.miCalculadora.resp.value+='1'" class="num1">
+            <input type="button" value="2" onclick="document.miCalculadora.resp.value+='2'" class="num2">
+            <input type="button" value="3" onclick="document.miCalculadora.resp.value+='3'" class="num3">
+            <input type="button" value="*" onclick="document.miCalculadora.resp.value+='*'" class="numX">
+            <br>
+            <input type="button" value="0" onclick="document.miCalculadora.resp.value+='0'"class="num0">
+            <input type="button" value="/" onclick="document.miCalculadora.resp.value+='/'" class="numDiv">
+            <input type="button" value="+" onclick="document.miCalculadora.resp.value+='+'" class="numMas">
+            <input type="button" value="." onclick="addDot()" class="numDot">
+            <br>
+            <input type="reset" value="RESET" class="numReset" id="reset">
+            <input type="button" value="=" class="numResul" id="equal" onclick="document.miCalculadora.resp.value=eval(document.miCalculadora.resp.value)">
+          </div>
+        </form>
       </div>
-
+    </div>
 </body>
+<script>
+  function deleteNum(){
+    let pantalla = document.miCalculadora.resp;
+    pantalla.value = pantalla.value.slice(0, -1);
+  }
+
+  function addDot(){
+    let pantalla = document.miCalculadora.resp;
+    let valor = pantalla.value;
+
+    let partes = valor.split(/[\+\-\*\/]/);
+    let ultimoNumero = partes[partes.length - 1];
+
+    if (!ultimoNumero.includes('.')) {
+      pantalla.value += '.';
+    }
+  }
+</script>
 </html>
